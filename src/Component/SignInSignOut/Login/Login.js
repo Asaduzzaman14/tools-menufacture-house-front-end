@@ -1,7 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css'
 
 const Login = () => {
+
+    const navigate = useNavigate()
+
+
+    const regiater = () => {
+        navigate('/register')
+    }
+
+
     return (
         <div>
             <h2 className='title'>Welcome</h2>
@@ -12,7 +22,7 @@ const Login = () => {
 
                 <ul className='form-link'>
                     <li>Forget Password</li>
-                    <li>Don't have acount?<span> Sign up</span> </li>
+                    <li>Don't have acount?<span onClick={regiater}> Sign up</span> </li>
                 </ul>
             </form>
 

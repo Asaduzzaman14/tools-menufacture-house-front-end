@@ -17,7 +17,7 @@ const Inventory = () => {
     return (
         <div className='inventory-container'>
             <div>
-                <h3 className='inventory-section-title'>This is inventory page</h3>
+                <h3 className='inventory-section-title'>inventory Items</h3>
             </div>
             <div className='card-container'>
                 {

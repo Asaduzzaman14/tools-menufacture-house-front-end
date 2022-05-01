@@ -20,12 +20,9 @@ const Register = () => {
                     <input className='submit-btn' type="submit" value='Sign Up' />
 
                     <ul className='form-link'>
-                        <li>Forget Password</li>
                         <li>Already have an account?<span onClick={() => navigate2('/login')}> Sign In</span> </li>
                     </ul>
                 </form>
-
-
 
             </div>
         </div>

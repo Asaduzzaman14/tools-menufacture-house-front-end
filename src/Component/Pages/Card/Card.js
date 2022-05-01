@@ -9,7 +9,11 @@ const Card = ({ item }) => {
             <div className='card-body'>
                 <img src={item.pictures} alt="" />
                 <h3>Name:{item.name}</h3>
-                <p>Desc:{item.desc}</p>
+                <p>supplier name:{item.desc}</p>
+                <p>price:{item.desc}</p>
+                <p>quantity:{item.desc}</p>
+
+                <button>Update</button>
             </div>
         </div>
     );

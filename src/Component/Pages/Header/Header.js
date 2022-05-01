@@ -1,13 +1,15 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Header.css'
+
 
 const Header = () => {
 
 
     return (
         <>
-            <Navbar expand="lg" sticky='top' bg="primary" variant="dark">
+            <Navbar className='navbar' expand="lg" sticky='top' variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/"> LOgo<img height={30} src='' alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

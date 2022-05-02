@@ -3,7 +3,6 @@ import './Card.css'
 
 
 const Card = ({ item }) => {
-    console.log(item);
     return (
         <div>
             <div className='card-body'>
@@ -11,7 +10,7 @@ const Card = ({ item }) => {
                 <h3>Name:{item.name}</h3>
                 <p>supplier name:{item.desc}</p>
                 <p>price:{item.desc}</p>
-                <p>quantity:{item.desc}</p>
+                <p>quantity:1</p>
 
                 <button>Update</button>
             </div>

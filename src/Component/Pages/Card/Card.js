@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Card.css'
 
 
 const Card = ({ item }) => {
+    const navigate = useNavigate()
+
     return (
         <div>
             <div className='card-body'>
@@ -12,7 +15,9 @@ const Card = ({ item }) => {
                 <p>price:{item.desc}</p>
                 <p>quantity:1</p>
 
-                <button>Update</button>
+                {/* <Link to={`/deliverd/${item.id}`}><button>Update</button> </Link> */}
+
+                <button onClick={() => navigate(`/deliverd/${item._id}`)} className='update-btn'>Update</button>
             </div>
         </div>
     );

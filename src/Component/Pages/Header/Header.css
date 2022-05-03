@@ -2,3 +2,15 @@
     background-color: #57b846;
     color: #fff !important;
 }
+
+.sign-out-btn {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #448b38;
+    color: #fff;
+}
+
+.sign-out-btn:hover {
+    background-color: #354b31;
+}

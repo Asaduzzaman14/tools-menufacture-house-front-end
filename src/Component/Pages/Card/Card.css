@@ -3,3 +3,12 @@
     border-radius: 8px;
     background-color: #fff;
 }
+
+.update-btn {
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(74, 102, 32);
+
+}

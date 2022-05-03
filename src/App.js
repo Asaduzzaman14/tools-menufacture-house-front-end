@@ -7,8 +7,10 @@ import Register from './Component/SignInSignOut/Register/Register';
 import MyItem from './Component/Pages/MyItem/MyItem';
 import Home from './Component/Pages/Home/Home';
 import PrivateRoute from './Component/SignInSignOut/PrivateRoute/PrivateRoute';
-import Inventory from './Component/Pages/Inventory/Inventory';
 import Footer from './Component/Pages/Footer/Footer';
+import AddItem from './Component/Pages/AddItem/AddItem';
+import About from './Component/Pages/About/About';
+import Deliverd from './Component/Pages/Deliverd/Deliverd';
 
 
 function App() {
@@ -25,7 +27,12 @@ function App() {
           <MyItem></MyItem>
         </PrivateRoute>}></Route>
 
-        <Route path='/myitem' element={<Inventory></Inventory>}></Route>
+        <Route path='/deliverd/:id' element={<PrivateRoute>
+          <Deliverd></Deliverd>
+        </PrivateRoute>}></Route>
+
+        <Route path='/additem' element={<AddItem></AddItem>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
       </Routes>

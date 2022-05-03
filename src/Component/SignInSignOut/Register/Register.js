@@ -7,8 +7,8 @@ const Register = () => {
     const navigate = useNavigate()
 
     const [agree, setAgree] = useState(false)
-    const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true }); const [updateProfile] = useUpdateProfile(auth);
-
+    const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile] = useUpdateProfile(auth);
 
     const navigate2 = () => {
         navigate('/login')

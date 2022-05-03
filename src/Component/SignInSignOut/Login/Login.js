@@ -1,14 +1,16 @@
 import React from 'react';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Login.css'
 
 const Login = () => {
 
     const navigate = useNavigate()
-    const [createUserWithEmailAndPassword, loading, error,] = useCreateUserWithEmailAndPassword(auth);
+    const location = useLocation()
+    const from = location.state?.from.pathname || '/'
 
+    const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
     let hookErrors;
     if (error) {
 
@@ -17,11 +19,16 @@ const Login = () => {
         </div>
     }
 
+    if (user) {
+        navigate(from, { replace: true })
+    }
+
+
     const handelLoginForm = (event) => {
         event.preventDefault()
         const email = event.target.email.value
         const password = event.target.password.value
-        createUserWithEmailAndPassword(email, password)
+        signInWithEmailAndPassword(email, password)
     }
 
 

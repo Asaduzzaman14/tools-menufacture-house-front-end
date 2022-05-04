@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import useProducts from '../../../hooks/useProducts';
 import Card from '../Card/Card';
 import './Inventory.css'
 
@@ -6,13 +7,9 @@ import './Inventory.css'
 
 const Inventory = () => {
 
-    const [items, setItems] = useState([])
+    const [items, setItems] = useProducts()
 
-    useEffect(() => {
-        fetch('fake.json')
-            .then(res => res.json())
-            .then(data => setItems(data))
-    }, [])
+
 
     return (
         <div className='inventory-container'>
@@ -23,6 +20,7 @@ const Inventory = () => {
                 {
                     items.map(item => <Card
                         item={item}
+                        key={item._id}
                     ></Card>)
                 }
             </div>

@@ -12,3 +12,7 @@
     background-color: rgb(74, 102, 32);
 
 }
+
+.card-body img {
+    height: 150px
+}

@@ -9,13 +9,12 @@ const Card = ({ item }) => {
     return (
         <div>
             <div className='card-body'>
-                <img src={item.pictures} alt="" />
+                <img src={item.img} alt="" />
                 <h3>Name:{item.name}</h3>
                 <p>supplier name:{item.desc}</p>
                 <p>price:{item.desc}</p>
                 <p>quantity:1</p>
 
-                {/* <Link to={`/deliverd/${item.id}`}><button>Update</button> </Link> */}
 
                 <button onClick={() => navigate(`/deliverd/${item._id}`)} className='update-btn'>Update</button>
             </div>

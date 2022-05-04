@@ -5,12 +5,13 @@ import useProducts from '../../../hooks/useProducts';
 const Deliverd = () => {
 
     const { id } = useParams()
+    console.log(id);
 
     const [items, setItems] = useProducts()
 
+    const clickItem = items.find(item => item._id === id)
 
-
-    const clickItem = items.filter(item => item._id === id)
+    console.log(clickItem);
 
     return (
         <div>

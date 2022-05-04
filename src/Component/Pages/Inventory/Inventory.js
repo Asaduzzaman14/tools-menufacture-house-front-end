@@ -7,9 +7,9 @@ import './Inventory.css'
 
 const Inventory = () => {
 
-    const [items, setItems] = useProducts()
+    const [products, setProduct] = useProducts()
 
-
+    const homepageItem = products.slice(0, 6)
 
     return (
         <div className='inventory-container'>
@@ -18,7 +18,7 @@ const Inventory = () => {
             </div>
             <div className='card-container'>
                 {
-                    items.map(item => <Card
+                    homepageItem.map(item => <Card
                         item={item}
                         key={item._id}
                     ></Card>)

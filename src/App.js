@@ -11,6 +11,8 @@ import Footer from './Component/Pages/Footer/Footer';
 import AddItem from './Component/Pages/AddItem/AddItem';
 import About from './Component/Pages/About/About';
 import Deliverd from './Component/Pages/Deliverd/Deliverd';
+import ManageItem from './Component/Pages/ManageItem/ManageItem';
+import NotFound from './Component/Pages/NotFound/NotFound';
 
 
 function App() {
@@ -31,10 +33,12 @@ function App() {
           <Deliverd></Deliverd>
         </PrivateRoute>}></Route>
 
+        <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
 

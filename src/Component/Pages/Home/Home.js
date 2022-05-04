@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImg from '../../../image/banner.jpg'
+import bannerImg from '../../../image/banner.webp'
 import Inventory from '../Inventory/Inventory';
 import './Home.css'
 

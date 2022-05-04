@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const useProducts = () => {
 
-    const [product, setProduct] = useState([])
+    const [products, setProduct] = useState([])
 
     useEffect(() => {
 
@@ -10,7 +10,7 @@ const useProducts = () => {
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
-    return [product, setProduct]
+    return [products, setProduct]
 
 }
 

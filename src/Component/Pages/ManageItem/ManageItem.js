@@ -1,12 +1,12 @@
 import React from 'react';
-import useProducts from '../../../hooks/useProducts';
+import useInventory from '../../../hooks/useInventory';
 import ManageItemCard from '../Card/ManageItemCard';
 import './ManageItem.css'
 
 
 const ManageItem = () => {
 
-    const [products, setProduct] = useProducts()
+    const [products, setProduct] = useInventory()
 
     return (
         <div>

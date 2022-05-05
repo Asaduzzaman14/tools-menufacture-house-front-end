@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import useProducts from '../../../hooks/useProducts';
+import useInventory from '../../../hooks/useInventory';
 import Card from '../Card/Card';
 import './Inventory.css'
 
@@ -7,9 +7,9 @@ import './Inventory.css'
 
 const Inventory = () => {
 
-    const [products, setProduct] = useProducts()
+    const [inventorys, setInventorys] = useInventory()
 
-    const homepageItem = products.slice(0, 6)
+    const homepageItem = inventorys.slice(0, 6)
 
     return (
         <div className='inventory-container'>

@@ -16,3 +16,9 @@
 .card-body img {
     height: 150px
 }
+
+
+.item-card {
+    display: flex;
+    height: 100px;
+}

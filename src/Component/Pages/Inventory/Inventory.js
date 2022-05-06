@@ -27,9 +27,7 @@ const Inventory = () => {
                 item={item}
                 key={item._id
                 }></Card>)}
-                <div>
-                    <button onClick={() => navigate('/manageitem')}>Manage Inventories</button>
-                </div>
+
             </div>
 
 

@@ -14,7 +14,7 @@ const useInventory = () => {
             .then(data => {
                 setInventorys(data)
             })
-    }, [inventorys])
+    }, [])
 
     return [inventorys, setInventorys]
 

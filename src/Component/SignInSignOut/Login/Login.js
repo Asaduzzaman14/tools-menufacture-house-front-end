@@ -2,6 +2,7 @@ import React from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
 
 const Login = () => {
@@ -55,7 +56,7 @@ const Login = () => {
                     <li>Don't have acount?<span onClick={handelNavigate}> Sign up</span> </li>
                 </ul>
             </form>
-
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

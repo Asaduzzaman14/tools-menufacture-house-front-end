@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import useItemDetails from '../../../hooks/useItemDetail';
 import Loading from '../Loading/Loading';
 
 const Deliverd = () => {
+    const navigate = useNavigate()
     const { id } = useParams()
     const [item] = useItemDetails(id)
     const { name, img, desc, quantity, price } = item
@@ -35,6 +36,9 @@ const Deliverd = () => {
                 </div>
                 <div>
                     <button onClick={() => { setQuentitys(quant + 1) }}>Delivered</button>
+                </div>
+                <div>
+                    <button onClick={() => navigate('/manageitem')}>Manage Inventories</button>
                 </div>
             </div>
         </div>

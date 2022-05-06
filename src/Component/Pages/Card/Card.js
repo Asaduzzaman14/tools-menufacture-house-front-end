@@ -10,10 +10,10 @@ const Card = ({ item }) => {
         <div>
             <div className='card-body'>
                 <img src={item.img} alt="" />
-                <h3>Name:{item.name}</h3>
-                <p>supplier name:{item.desc}</p>
-                <p>price:{item.desc}</p>
-                <p>quantity:1</p>
+                <h3>Name: {item.name}</h3>
+                <p>supplier name: {item.desc}</p>
+                <p>price: {item.price}</p>
+                <p>quantity: {item.quantity}</p>
 
 
                 <button onClick={() => navigate(`/deliverd/${item._id}`)} className='update-btn'>Update</button>

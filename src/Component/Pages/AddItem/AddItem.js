@@ -7,7 +7,7 @@ const AddItem = () => {
 
 
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         const url = `http://localhost:5000/additem`
         fetch(url, {
@@ -18,8 +18,11 @@ const AddItem = () => {
             body: JSON.stringify(data)
         })
             .then(res => res.json())
-            .then(data => console.log(data))
-        console.log(data);
+            .then(data => {
+
+                console.log(data)
+                reset()
+            })
     };
 
 
@@ -29,9 +32,13 @@ const AddItem = () => {
             <h2>Add your new Item</h2>
             <form className='d-flex flex-column w-50 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3' placeholder='name' {...register("name", { required: true, maxLength: 20 })} />
-                <textarea className='mb-3' placeholder='description' {...register("desc",)} />
+                <input className='mb-3' placeholder='supplier name' type="text" {...register("supplier name",)} />
                 <input className='mb-3' placeholder='price' type="number" {...register("price",)} />
+                <input className='mb-3' placeholder='quantity' type="number" {...register("quantity")} />
+
+
                 <input className='mb-3' placeholder='photo url' type="text" {...register("img",)} />
+                <textarea className='mb-3' placeholder='description' {...register("desc",)} />
                 <input type="submit" value={'Add inventory'} />
             </form>
         </div>

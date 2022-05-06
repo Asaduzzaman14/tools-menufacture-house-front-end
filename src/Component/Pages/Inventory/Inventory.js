@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import useInventory from '../../../hooks/useInventory';
 import Card from '../Card/Card';
 import Loading from '../Loading/Loading';
@@ -7,13 +8,12 @@ import './Inventory.css'
 
 
 const Inventory = () => {
+    const navigate = useNavigate()
 
     const [inventorys, setInventorys] = useInventory()
 
-    console.log(inventorys, 'aaaaaaaaaa');
 
     const homepageItem = inventorys.slice(0, 6)
-    console.log(homepageItem, 'bbbbbbbbbbbb');
     return (
         <div className='inventory-container'>
             <div>
@@ -28,7 +28,7 @@ const Inventory = () => {
                 key={item._id
                 }></Card>)}
                 <div>
-                    <button>Manage inventory</button>
+                    <button onClick={() => navigate('/manageitem')}>Manage Inventories</button>
                 </div>
             </div>
 

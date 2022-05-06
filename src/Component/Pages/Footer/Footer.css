@@ -19,19 +19,24 @@
 }
 
 .footer-heading {
-    font-size: 22px;
+    font-size: 18px;
+    color: rgb(212, 231, 248);
     margin-bottom: 20px;
 }
 
-.footer-container li,
-a {
+.footer-container li {
     list-style: none;
     text-decoration: none;
-    color: #fff;
+    color: rgb(217, 205, 205);
+}
+
+.footer-container li span {
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .copyright-text {
     margin-top: 30px;
-    background-color: rgb(16, 14, 40);
+    /* background-color: rgb(16, 14, 40); */
     padding: 20px;
 }

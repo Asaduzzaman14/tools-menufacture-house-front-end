@@ -10,35 +10,35 @@ const Footer = () => {
                 <div className="row">
                     <div className="footer-col">
                         <h4 className="footer-heading">Company</h4>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Our Service</a></li>
-                        <li><a href="">Policy</a></li>
-                        <li><a href="">Archive</a></li>
-                        <li><a href="">Popular</a></li>
+                        <li><span>About us</span></li>
+                        <li><span>Our Service</span></li>
+                        <li><span>Policy</span></li>
+                        <li><span>Archive</span></li>
+                        <li><span>Popular</span></li>
                     </div>
                     <div className="footer-col">
                         <h4 className="footer-heading">company</h4>
-                        <li><a href="">Ecommerce</a></li>
-                        <li><a href="">Cookie Preferences</a></li>
-                        <li><a href="">Customers</a></li>
-                        <li><a href="">Accessibility</a></li>
-                        <li><a href="">Archive</a></li>
+                        <li><span>Ecommerce</span></li>
+                        <li><span>Cookie Preferences</span></li>
+                        <li><span>Customers</span></li>
+                        <li><span>Accessibility</span></li>
+                        <li><span>Archive</span></li>
                     </div>
                     <div className="footer-col">
                         <h4 className="footer-heading">company</h4>
-                        <li><a href="">SEO</a></li>
-                        <li><a href="">Interactions</a></li>
-                        <li><a href="">Interactions</a></li>
-                        <li><a href="">Popular</a></li>
-                        <li><a href="">Interactions</a></li>
+                        <li><span>SEO</span></li>
+                        <li><span>Interactions</span></li>
+                        <li><span>Interactions</span></li>
+                        <li><span>Popular</span></li>
+                        <li><span>Interactions</span></li>
                     </div>
                     <div className="footer-col">
                         <h4 className="footer-heading">Follow US</h4>
-                        <li><a href="">facebok</a></li>
-                        <li><a href="">twiter</a></li>
-                        <li><a href="">youtube</a></li>
-                        <li><a href="">linkdin</a></li>
-                        <li><a href="">github</a></li>
+                        <li><span>facebok</span></li>
+                        <li><span>twiter</span></li>
+                        <li><span>youtube</span></li>
+                        <li><span>linkdin</span></li>
+                        <li><span>github</span></li>
                     </div>
                 </div>
                 <p className='copyright-text'>&copy; copyright 2022 </p>

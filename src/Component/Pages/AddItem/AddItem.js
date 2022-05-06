@@ -1,12 +1,14 @@
 import React from 'react';
 
 import { useForm } from "react-hook-form";
-
+import { useAuthState } from 'react-firebase-hooks/auth'
+import auth from '../../../firebase.init';
 
 const AddItem = () => {
 
 
-
+    const [user] = useAuthState(auth)
+    console.log(user.email);
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         const url = `http://localhost:5000/additem`
@@ -33,6 +35,7 @@ const AddItem = () => {
             <form className='d-flex flex-column w-50 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-3' placeholder='name' {...register("name", { required: true, maxLength: 20 })} />
                 <input className='mb-3' placeholder='supplier name' type="text" {...register("supplier name",)} />
+                <input className='mb-3' placeholder='email' type="email" {...register("email")} value={user.email} />
                 <input className='mb-3' placeholder='price' type="number" {...register("price",)} />
                 <input className='mb-3' placeholder='quantity' type="number" {...register("quantity")} />
 

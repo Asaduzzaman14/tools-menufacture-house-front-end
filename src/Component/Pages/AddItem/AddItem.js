@@ -8,9 +8,10 @@ const AddItem = () => {
 
 
     const [user] = useAuthState(auth)
-    console.log(user.email);
+    console.log(user.email, 'aaaaaaaaaaa');
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
+        console.log(data, 'bbbbbbbb');
         const url = `http://localhost:5000/additem`
         fetch(url, {
             method: 'POST',
@@ -22,7 +23,7 @@ const AddItem = () => {
             .then(res => res.json())
             .then(data => {
 
-                console.log(data)
+                console.log(data, 'cccccccccc')
                 reset()
             })
     };

@@ -3,9 +3,11 @@ import axios from 'axios'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import auth from '../../../firebase.init';
 import UserInventoryItem from '../UserInventoryItem/UserInventoryItem';
+import { useNavigate } from 'react-router-dom';
 
 
 const MyItem = () => {
+    const navigate = useNavigate()
     const [user] = useAuthState(auth)
     const [items, setItems] = useState([])
 
@@ -47,19 +49,26 @@ const MyItem = () => {
     return (
         <div>
             <h2>This is my item {items.length}</h2>
+            {/* <button onClick={() => navigate('/additem')}>Add new ITem</button> */}
 
             <div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">suplier</th>
-                            <th scope="col">quantity</th>
-                            <th scope="col">Delete</th>
-                        </tr>
-                    </thead>
+                <table class="table mt-5">
+                    {
+                        items.length === 0 ? <>YOU HAVE NO ITEM             <button className='add-btn' onClick={() => navigate('/additem')}>Please Add new ITem</button>
+                        </>
+                            : <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">suplier</th>
+                                    <th scope="col">quantity</th>
+                                    <th scope="col">Delete</th>
+                                </tr>
+                            </thead>
+                    }
+
+
                     <tbody>
 
                         <>

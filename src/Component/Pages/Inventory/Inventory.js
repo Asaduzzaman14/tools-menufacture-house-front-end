@@ -13,9 +13,6 @@ const Inventory = () => {
     const [inventorys, setInventorys] = useInventory()
     const homepageItem = inventorys.slice(0, 6)
 
-    if (!homepageItem) {
-        <Loading></Loading>
-    }
 
     return (
         <div className='inventory-container'>
@@ -23,7 +20,9 @@ const Inventory = () => {
                 <h3 className='inventory-section-title'>inventory Items</h3>
             </div>
 
+            {homepageItem.length === 0 ? <Loading></Loading> : ''
 
+            }
             <div className='card-container'> {homepageItem.map(item => <Card
                 item={item}
                 key={item._id

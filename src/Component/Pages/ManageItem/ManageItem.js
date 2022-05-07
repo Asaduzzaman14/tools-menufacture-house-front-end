@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useInventory from '../../../hooks/useInventory';
 import ManageItemCard from '../Card/ManageItemCard';
+import Loading from '../Loading/Loading';
 import './ManageItem.css'
 
 
@@ -15,9 +16,12 @@ const ManageItem = () => {
             <h2>Manage admin item {products.length}</h2>
 
             <button onClick={() => navigate('/additem')}>Add new ITem</button>
+            {products.length === 0 ? <Loading></Loading> : ''
 
+            }
 
             <table class="table ">
+
                 <thead>
                     <tr>
                         <th scope="col">Item</th>
@@ -30,6 +34,9 @@ const ManageItem = () => {
                         <th scope="col">update</th>
                     </tr>
                 </thead>
+
+
+
                 <tbody>
 
                     <>

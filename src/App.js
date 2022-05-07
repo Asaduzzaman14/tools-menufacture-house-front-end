@@ -14,7 +14,6 @@ import Deliverd from './Component/Pages/Deliverd/Deliverd';
 import ManageItem from './Component/Pages/ManageItem/ManageItem';
 import NotFound from './Component/Pages/NotFound/NotFound';
 
-
 function App() {
 
 

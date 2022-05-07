@@ -8,7 +8,7 @@ const Card = ({ item }) => {
 
     return (
         <div>
-            <div className='card-body'>
+            <div className='card-body col-12'>
                 <img src={item.img} alt="" />
                 <h3>Name: {item.name}</h3>
                 <p>supplier name: {item.desc}</p>

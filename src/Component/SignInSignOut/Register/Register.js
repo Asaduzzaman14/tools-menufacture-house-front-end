@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const navigate = useNavigate()
@@ -56,7 +57,7 @@ const Register = () => {
                         <li>Already have an account?<span onClick={() => navigate2('/login')}> Sign In</span> </li>
                     </ul>
                 </form>
-
+                <SocialLogin></SocialLogin>
             </div>
         </div>
     );

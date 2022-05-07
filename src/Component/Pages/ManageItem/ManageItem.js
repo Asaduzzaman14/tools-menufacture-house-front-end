@@ -16,14 +16,7 @@ const ManageItem = () => {
 
             <button onClick={() => navigate('/additem')}>Add new ITem</button>
 
-            {/* <div className='manage-item-container'>
-                {
-                    products.map(product => <ManageItemCard
-                        product={product}
-                        key={product._id}
-                    ></ManageItemCard>)
-                }
-            </div> */}
+
             <table class="table ">
                 <thead>
                     <tr>

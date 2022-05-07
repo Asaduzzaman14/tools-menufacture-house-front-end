@@ -11,7 +11,6 @@ const MyItem = () => {
 
 
     useEffect(() => {
-
         const getItem = async () => {
             const email = user.email
             console.log(email);
@@ -21,9 +20,28 @@ const MyItem = () => {
 
         }
         getItem()
-
-
     }, [user])
+
+    const handelDelete = (id) => {
+        const proceed = window.confirm('Are you sure')
+        if (proceed) {
+
+            const url = `http://localhost:5000/item/${id}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = items.filter(item => item._id !== id)
+                    setItems(remaining)
+                })
+
+        }
+
+    }
+
+
 
 
     return (
@@ -34,10 +52,12 @@ const MyItem = () => {
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">No</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">suplier</th>
+                            <th scope="col">quantity</th>
+                            <th scope="col">Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,6 +68,7 @@ const MyItem = () => {
                                     item={item}
                                     keys={keys}
                                     key={item.key}
+                                    handelDelete={handelDelete}
                                 ></UserInventoryItem>)
                             }
                         </>

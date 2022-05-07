@@ -34,7 +34,7 @@ const ManageItemCard = ({ product, index }) => {
             <td>{name}</td>
             <td>{price}</td>
             <td>{quantity}</td>
-            <td><button onClick={() => handelDelete(_id)}>delete</button></td>
+            <td><button onClick={() => { handelDelete(_id) }} >delete</button></td>
             <td><button>update</button></td>
 
         </tr>

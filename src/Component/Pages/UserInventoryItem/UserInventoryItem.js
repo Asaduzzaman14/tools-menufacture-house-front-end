@@ -1,14 +1,16 @@
 import React from 'react';
 
-const UserInventoryItem = ({ item, keys }) => {
-    const { name, img, desc, _id, quantity } = item
+const UserInventoryItem = ({ item, keys, handelDelete }) => {
+    const { name, _id, email, img, suplierName, quantity } = item
     return (
         <tr>
             <th scope="row">{keys}</th>
             <td>{name}</td>
+            <td>{email}</td>
+            <td>{suplierName}</td>
             <td>{quantity}</td>
-            <td>a</td>
-        </tr>
+            <td><button onClick={() => handelDelete(_id)} >Delete</button></td>
+        </tr >
     );
 };
 

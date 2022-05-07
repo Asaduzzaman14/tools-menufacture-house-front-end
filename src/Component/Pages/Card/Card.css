@@ -1,7 +1,7 @@
 .card-body {
     border: 1px solid;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: rgb(221, 226, 223);
 }
 
 .update-btn {
@@ -26,3 +26,11 @@
     margin-top: 10px;
 }
 
+.manage-item {
+    width: 100%;
+}
+
+.manage-item img {
+    width: 100px;
+    height: 100px;
+}

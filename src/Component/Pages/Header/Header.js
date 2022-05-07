@@ -12,10 +12,6 @@ const Header = () => {
     const [user] = useAuthState(auth);
 
 
-
-
-
-
     return (
         <>
             <Navbar className='navbar' expand="lg" sticky='top' variant="dark">
@@ -28,10 +24,6 @@ const Header = () => {
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
 
-
-
-
-
                             {
                                 user ? <>
                                     <Nav.Link as={Link} to="/manageitem">Manage item</Nav.Link>
@@ -39,7 +31,6 @@ const Header = () => {
                                     <Nav.Link as={Link} to="/myitem">My Item</Nav.Link>
                                     <button className='sign-out-btn' onClick={() => signOut(auth)}  >Log Out</button>
                                 </>
-
                                     :
                                     <Nav.Link as={Link} to="/login">Login</Nav.Link>
                             }

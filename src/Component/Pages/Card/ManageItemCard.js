@@ -2,8 +2,8 @@ import React from 'react';
 import useProducts from '../../../hooks/useInventory';
 import './Card.css'
 
-const ManageItemCard = ({ product }) => {
-    const { name, _id, desc, img } = product
+const ManageItemCard = ({ product, index }) => {
+    const { name, _id, price, desc, img, quantity, } = product
 
     const [inventory, setInventory] = useProducts()
 
@@ -26,17 +26,18 @@ const ManageItemCard = ({ product }) => {
 
     }
 
-
     return (
-        <div className='item-card'>
-            <img src={img} alt="" />
-            <h6>{name}</h6>
-            <h5>{_id}</h5>
-            <div>
-                <button onClick={() => handelDelete(_id)}>delete</button>
-            </div>
+        <tr className='manage-item w-50'>
+            <th scope="row">{index}</th>
+            <td><img src={img} alt="" /></td>
+            <td>{name}</td>
+            <td>{name}</td>
+            <td>{price}</td>
+            <td>{quantity}</td>
+            <td><button onClick={() => handelDelete(_id)}>delete</button></td>
+            <td><button>update</button></td>
 
-        </div >
+        </tr>
     );
 };
 

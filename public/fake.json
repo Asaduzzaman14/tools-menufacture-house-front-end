@@ -4,7 +4,7 @@
         "desc": "Cherry is a fruit of genus prunus, is a fleshy drupe. The sweet cherry is scientifically named Prunus avium, and the sour cherry is named Prunus cerasus.",
         "img": "https://i.ibb.co/YyBL78V/cheries.jpg",
         "name": "Cherry   ",
-        "supplier name": "Dominique Copeland",
+        "supplierName": "Dominique Copeland",
         "price": "99",
         "quantity": "9"
     },
@@ -13,7 +13,7 @@
         "desc": "Grape is a berry-type fruit that is used to make wines and is grown on the flowering plant from the Vitis family.",
         "img": "https://i.ibb.co/q9rbjpm/grapes.jpg",
         "name": "Grape ",
-        "supplier name": "Witt Espinoza",
+        "supplierName": "Witt Espinoza",
         "price": "99",
         "quantity": "9"
     },
@@ -22,7 +22,7 @@
         "desc": "Oranges are citrus fruit from the family Rutaceae. It is also called sweet orange tastes sweet, sour, and bitter.",
         "img": "https://i.ibb.co/YThgYSB/orange.jpg",
         "name": "Oranges  ",
-        "supplier name": "Gomez Jacobs",
+        "supplierName": "Gomez Jacobs",
         "price": "99",
         "quantity": "9"
     },
@@ -31,7 +31,7 @@
         "desc": "A banana is a fleshy and edible fruit that does not contain any seeds. Its family is Musa named scientifically, Musa acuminate, variable in size, color, and elongated, curve-shaped.",
         "img": "https://i.ibb.co/n8h870n/banana.webp",
         "name": "banana  ",
-        "supplier name": "Christensen Hodges",
+        "supplierName": "Christensen Hodges",
         "price": "99",
         "quantity": "9"
     },
@@ -40,7 +40,7 @@
         "desc": "A banana is a fleshy and edible fruit that does not contain any seeds. Its family is Musa named scientifically, Musa acuminate, variable in size, color, and elongated, curve-shaped.",
         "img": "https://i.ibb.co/27d20kk/banana1.webp",
         "name": "banana ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     },
@@ -49,7 +49,7 @@
         "desc": "The mango is an edible fruit rich in vitamins(A, C &D), and the taste is either sweet when ripe and sour when before ripen.",
         "img": "https://i.ibb.co/ySC1TXq/green-apple-with-leaves-1101-453.webp",
         "name": "mango ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     },
@@ -58,7 +58,7 @@
         "desc": "hello",
         "img": "https://i.ibb.co/fGRT6kn/papaya.webp",
         "name": "mango ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     },
@@ -67,7 +67,7 @@
         "desc": "hello",
         "img": "https://i.ibb.co/fGRT6kn/papaya.webp",
         "name": "mango ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     },
@@ -76,7 +76,7 @@
         "desc": "hello",
         "img": "https://i.ibb.co/55Wk3y6/orange.webp",
         "name": "mango ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     },
@@ -85,7 +85,7 @@
         "desc": "hello",
         "img": "https://i.ibb.co/dGd58df/strobary.webp",
         "name": "mango ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     },
@@ -94,7 +94,7 @@
         "desc": "hello",
         "img": "https://i.ibb.co/kGwXz3v/coconut.jpg",
         "name": "mango ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     },
@@ -103,7 +103,7 @@
         "desc": "hello",
         "img": "https://i.ibb.co/BsRXrzP/mango.jpg",
         "name": "mango ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     },
@@ -112,7 +112,7 @@
         "desc": "hello",
         "img": "https://i.ibb.co/7bx6tbx/Pomegranate.webp",
         "name": "mango ",
-        "supplier name": "Mcmillan Hinton",
+        "supplierName": "Mcmillan Hinton",
         "price": "99",
         "quantity": "9"
     }

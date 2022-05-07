@@ -1,0 +1,22 @@
+.update-container {
+    background-color: aliceblue;
+}
+
+.buttons {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 4px 16px;
+    margin: 10px;
+    background-color: rgb(69, 166, 87);
+    color: #fff;
+
+}
+
+.inventory-card {
+    display: flex;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}

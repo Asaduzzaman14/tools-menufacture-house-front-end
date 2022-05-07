@@ -42,7 +42,7 @@ const MyItem = () => {
                     </thead>
                     <tbody>
 
-                        <div >
+                        <>
                             {
                                 items.map((item, keys) => <UserInventoryItem
                                     item={item}
@@ -50,7 +50,7 @@ const MyItem = () => {
                                     key={item.key}
                                 ></UserInventoryItem>)
                             }
-                        </div>
+                        </>
 
                     </tbody>
                 </table>

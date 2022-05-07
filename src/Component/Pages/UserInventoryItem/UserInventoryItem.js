@@ -7,7 +7,7 @@ const UserInventoryItem = ({ item, keys }) => {
             <th scope="row">{keys}</th>
             <td>{name}</td>
             <td>{quantity}</td>
-            <td>{_id}</td>
+            <td>a</td>
         </tr>
     );
 };

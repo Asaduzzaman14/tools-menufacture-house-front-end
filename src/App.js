@@ -14,6 +14,7 @@ import Deliverd from './Component/Pages/Deliverd/Deliverd';
 import ManageItem from './Component/Pages/ManageItem/ManageItem';
 import NotFound from './Component/Pages/NotFound/NotFound';
 import Blogs from './Component/Blogs/Blogs';
+import UpdateItem from './Component/Pages/UpdateItem/UpdateItem';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         </PrivateRoute>}></Route>
 
         <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
+        <Route path='/updateitem/:id' element={<UpdateItem></UpdateItem>}></Route>
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>

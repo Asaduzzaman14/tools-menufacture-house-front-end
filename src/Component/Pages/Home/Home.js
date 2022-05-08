@@ -13,7 +13,7 @@ const Home = () => {
                 <div>
                     <img className='banner-img' src={bannerImg} alt="" />
                 </div>
-                <h2 className='banner-title'>Wearhouse management web</h2>
+                <h2 className='banner-title'>Welcome to Fruites Wearhouse </h2>
             </div>
 
             {/* inventory */}

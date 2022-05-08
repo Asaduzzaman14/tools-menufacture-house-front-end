@@ -7,7 +7,7 @@ const Visit = () => {
 
     const [warehouse, setWarehouse] = useState([])
     useEffect(() => {
-        fetch('worker.json')
+        fetch('http://localhost:5000/extra')
             .then(res => res.json())
             .then(data => setWarehouse(data))
     }, [])

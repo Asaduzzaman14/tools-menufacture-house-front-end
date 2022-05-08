@@ -7,7 +7,7 @@ const Worker = () => {
 
     const [workers, setworkers] = useState([])
     useEffect(() => {
-        fetch('worker.json')
+        fetch('http://localhost:5000/extra')
             .then(res => res.json())
             .then(data => setworkers(data))
     }, [])

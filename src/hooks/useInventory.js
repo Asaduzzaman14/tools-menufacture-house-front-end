@@ -11,7 +11,7 @@ const useInventory = () => {
                 setInventorys(data)
             })
 
-    }, [])
+    }, [inventorys])
 
     return [inventorys, setInventorys]
 }

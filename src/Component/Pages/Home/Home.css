@@ -8,7 +8,8 @@
 }
 
 .banner-title {
-    color: rgb(252, 252, 253);
+    color: #fff;
+    font-size: 40px;
     position: absolute;
     top: 50%;
     left: 50%;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-const useItemDetails = (itemId) => {
+const useItemDetails = (itemId, id) => {
 
     const [item, setItems] = useState([])
 
@@ -11,7 +11,7 @@ const useItemDetails = (itemId) => {
             .then(res => res.json())
             .then(data => setItems(data))
 
-    }, [itemId])
+    }, [itemId, id])
     return [item, setItems]
 }
 

@@ -1,3 +1,31 @@
+
+# live site: []()
+
+
+
+#example project 
+
+#Techonlgy stack 
+* JavaScript
+* React
+* vanila css
+* Bootstrap
+* React Bootstrap
+* firebase
+* React Icon
+
+#Website Features
+* register with google
+* sign in with email and password
+* Reset password
+* Email verification
+* blog page
+* about page 
+* require authentication
+* simple footer
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

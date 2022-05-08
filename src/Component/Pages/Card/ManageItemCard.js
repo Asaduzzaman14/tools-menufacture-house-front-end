@@ -4,9 +4,11 @@ import './Card.css'
 
 import { AiFillDelete } from 'react-icons/ai';
 import { GrUpdate } from 'react-icons/gr';
+import { useNavigate } from 'react-router-dom';
 
 
 const ManageItemCard = ({ product, index }) => {
+    const navigate = useNavigate()
     const { name, _id, price, desc, img, quantity, } = product
 
     const [inventory, setInventory] = useProducts()
@@ -38,10 +40,7 @@ const ManageItemCard = ({ product, index }) => {
             <td>{name}</td>
             <td>{price}</td>
             <td>{quantity}</td>
-            {/* <td><button onClick={() => { handelDelete(_id) }} >delete</button></td>
-            <td><button>update</button></td> */}
-
-            <td><span className='update-icon' onClick={() => { }} ><GrUpdate></GrUpdate></span></td>
+            <td><span className='update-icon' onClick={() => navigate(`/updateitem/${_id}`)} ><GrUpdate></GrUpdate></span></td>
             <td><span className='delete-icon' onClick={() => handelDelete(_id)} ><AiFillDelete></AiFillDelete></span></td>
 
         </tr>

@@ -10,10 +10,10 @@ const Register = () => {
     const [agree, setAgree] = useState(false)
     const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile] = useUpdateProfile(auth);
-
     const navigate2 = () => {
         navigate('/login')
     }
+
     if (user) {
         console.log(user, 'hello');
     }
@@ -36,7 +36,7 @@ const Register = () => {
 
     return (
         <div>
-            <h2>This is rgister page</h2>
+            <h2>Please Register</h2>
             <div>
 
                 <form className='form' onSubmit={handelFormSubmit}>

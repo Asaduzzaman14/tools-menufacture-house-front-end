@@ -45,8 +45,8 @@ const Deliverd = () => {
             <div className='inventory-card'>
                 <div className='img-container'><img src={img} alt="" /></div>
                 <div>
-                    <h3>desc: {desc}</h3>
                     <h3>Name: {name}</h3>
+                    <p>desc: {desc}</p>
                     <p>supplier name: {suplierName}</p>
                     <p>price: ${price}</p>
                     <p>quantity: {quantity}</p>

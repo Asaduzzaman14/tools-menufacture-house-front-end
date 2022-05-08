@@ -4,6 +4,7 @@ import { useAuthState, useCreateUserWithEmailAndPassword } from 'react-firebase-
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
+import logo from '../../../image/logo.jpg'
 import './Header.css'
 
 
@@ -16,7 +17,7 @@ const Header = () => {
         <>
             <Navbar className='navbar' expand="lg" sticky='top' variant="dark">
                 <Container>
-                    <Navbar.Brand as={Link} to="/"> LOgo<img height={30} src='' alt="" /></Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/"> <img height={30} src={logo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 

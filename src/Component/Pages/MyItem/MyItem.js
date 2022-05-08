@@ -52,7 +52,7 @@ const MyItem = () => {
             {/* <button onClick={() => navigate('/additem')}>Add new ITem</button> */}
 
             <div>
-                <table class="table mt-5">
+                <table className="table mt-5">
                     {
                         items.length === 0 ? <>YOU HAVE NO ITEM             <button className='add-btn' onClick={() => navigate('/additem')}>Please Add new ITem</button>
                         </>

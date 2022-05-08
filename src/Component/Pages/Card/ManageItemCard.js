@@ -2,6 +2,10 @@ import React from 'react';
 import useProducts from '../../../hooks/useInventory';
 import './Card.css'
 
+import { AiFillDelete } from 'react-icons/ai';
+import { GrUpdate } from 'react-icons/gr';
+
+
 const ManageItemCard = ({ product, index }) => {
     const { name, _id, price, desc, img, quantity, } = product
 
@@ -34,8 +38,11 @@ const ManageItemCard = ({ product, index }) => {
             <td>{name}</td>
             <td>{price}</td>
             <td>{quantity}</td>
-            <td><button onClick={() => { handelDelete(_id) }} >delete</button></td>
-            <td><button>update</button></td>
+            {/* <td><button onClick={() => { handelDelete(_id) }} >delete</button></td>
+            <td><button>update</button></td> */}
+
+            <td><span className='update-icon' onClick={() => { }} ><GrUpdate></GrUpdate></span></td>
+            <td><span className='delete-icon' onClick={() => handelDelete(_id)} ><AiFillDelete></AiFillDelete></span></td>
 
         </tr>
     );

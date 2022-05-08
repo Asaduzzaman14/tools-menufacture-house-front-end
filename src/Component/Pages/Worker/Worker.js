@@ -21,6 +21,7 @@ const Worker = () => {
                 {
                     workers.map(worker => <SingleWorker
                         worker={worker}
+                        key={worker._id}
                     ></SingleWorker>)
                 }
             </div>

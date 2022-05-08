@@ -12,7 +12,7 @@ const Card = ({ item }) => {
                 <img src={item.img} alt="" />
                 <h3>Name: {item.name}</h3>
                 <p>desc : {item.desc.split(0, 20)}</p>
-                <p>supplier name: {item.suplierName}</p>
+                <p>supplier name: {item.supplierName}</p>
                 <p>price: {item.price}</p>
                 <p>quantity: {item.quantity}</p>
 

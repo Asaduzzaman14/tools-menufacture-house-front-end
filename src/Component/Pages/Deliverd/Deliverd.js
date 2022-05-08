@@ -12,8 +12,8 @@ const Deliverd = () => {
     const [item] = useItemDetails(id)
 
 
-    const { name, img, desc, suplierName, quantity, price } = item
-
+    const { name, img, desc, supplierName, quantity, price } = item
+    console.log(supplierName, 'hhhhhhhh');
     const [quant, setQuentitys] = useState()
 
     const { register, handleSubmit, reset } = useForm();
@@ -47,7 +47,7 @@ const Deliverd = () => {
                 <div>
                     <h3>Name: {name}</h3>
                     <p>desc: {desc}</p>
-                    <p>supplier name: {suplierName}</p>
+                    <p>supplier name: {supplierName}</p>
                     <p>price: ${price}</p>
                     <p>quantity: {quantity}</p>
 

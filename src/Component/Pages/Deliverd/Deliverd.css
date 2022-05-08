@@ -21,8 +21,20 @@
     padding: 30px;
 }
 
-.inventory-card img {
-    max-width: 400px
+.img-container {
+    max-width: 400px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.inventory-card .img-container img {
+    max-width: 400px;
+    height: 300px;
+    border-radius: 8px;
 }
 
 

@@ -12,7 +12,7 @@ const Deliverd = () => {
     const [item] = useItemDetails(id)
 
 
-    const { name, img, desc, quantity, price } = item
+    const { name, img, desc, suplierName, quantity, price } = item
 
     const [quant, setQuentitys] = useState()
 
@@ -43,10 +43,11 @@ const Deliverd = () => {
             <h2>This is update section  name: {item.name}</h2>
 
             <div className='inventory-card'>
-                <div><img src={img} alt="" /></div>
+                <div className='img-container'><img src={img} alt="" /></div>
                 <div>
+                    <h3>desc: {desc}</h3>
                     <h3>Name: {name}</h3>
-                    <p>supplier name: {desc}</p>
+                    <p>supplier name: {suplierName}</p>
                     <p>price: ${price}</p>
                     <p>quantity: {quantity}</p>
 

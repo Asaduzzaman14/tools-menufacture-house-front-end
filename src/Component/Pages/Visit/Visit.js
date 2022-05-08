@@ -7,7 +7,7 @@ const Visit = () => {
 
     const [warehouse, setWarehouse] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/extra')
+        fetch('https://arcane-cove-19592.herokuapp.com/extra')
             .then(res => res.json())
             .then(data => setWarehouse(data))
     }, [])

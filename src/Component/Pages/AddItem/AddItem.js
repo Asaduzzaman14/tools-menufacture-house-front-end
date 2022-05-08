@@ -12,7 +12,7 @@ const AddItem = () => {
     const [user] = useAuthState(auth)
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/additem`
+        const url = `https://arcane-cove-19592.herokuapp.com/additem`
         fetch(url, {
             method: 'POST',
             headers: {

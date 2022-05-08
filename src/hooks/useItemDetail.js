@@ -6,7 +6,7 @@ const useItemDetails = (itemId, id) => {
     const [item, setItems] = useState([])
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${itemId}`
+        const url = `https://arcane-cove-19592.herokuapp.com/item/${itemId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setItems(data))

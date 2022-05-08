@@ -30,8 +30,8 @@ const ManageItem = () => {
                         <th scope="col">suplier</th>
                         <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
-                        <th scope="col">Delete</th>
                         <th scope="col">update</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
 

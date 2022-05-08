@@ -14,6 +14,7 @@
 * firebase
 * React Icon
 
+
 #Website Features
 * register with google
 * sign in with email and password
@@ -23,6 +24,11 @@
 * about page 
 * require authentication
 * simple footer
+* update inventory
+* delete inventory 
+* Meet our Worker section
+* Visit Our WearHouse section
+* my item route 
 
 
 

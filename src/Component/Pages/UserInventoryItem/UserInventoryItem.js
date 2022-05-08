@@ -5,13 +5,13 @@ import './UserInventoryItem.css'
 
 
 const UserInventoryItem = ({ item, keys, handelDelete }) => {
-    const { name, _id, email, img, suplierName, quantity } = item
+    const { name, _id, email, img, supplierName, quantity } = item
     return (
         <tr className='my-item'>
-            <th scope="row">{keys}</th>
-            <td>{name}</td>
+            <td >{keys}</td>
+            <td >{name}</td>
             <td>{email}</td>
-            <td>{suplierName}</td>
+            <td>{supplierName}</td>
             <td>{quantity}</td>
             <td><span className='update-icon' onClick={() => { }} ><GrUpdate></GrUpdate></span></td>
             <td><span className='delete-icon' onClick={() => handelDelete(_id)} ><AiFillDelete></AiFillDelete></span></td>

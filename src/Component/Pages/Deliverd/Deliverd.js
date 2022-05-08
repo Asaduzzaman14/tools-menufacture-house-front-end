@@ -20,7 +20,7 @@ const Deliverd = () => {
     const onSubmit = data => {
         const url = `https://arcane-cove-19592.herokuapp.com/update/${id}`
         fetch(url, {
-            method: 'PUT',
+            method: 'patch',
             headers: {
                 'content-type': 'application/json'
             },
@@ -52,9 +52,9 @@ const Deliverd = () => {
 
                     <button className='buttons' onClick={() => { setQuentitys(quant + 1) }}>Delivered</button>
 
-                    <from className='d-flex' onSubmit={handleSubmit(onSubmit)}>
+                    <from className='d-flex ms-5' onSubmit={handleSubmit(onSubmit)}>
                         <input className='mb-3' placeholder='quantity' type="number" {...register("quantity")} />
-                        <input type="submit" value="ReStock" className='buttons' />
+                        <input type="submit" value="ReStock" className='buttons mb-3' />
                     </from>
 
                 </div>

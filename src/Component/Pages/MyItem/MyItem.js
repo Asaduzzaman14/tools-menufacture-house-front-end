@@ -49,7 +49,6 @@ const MyItem = () => {
     return (
         <div>
             <h2>This is my item {items.length}</h2>
-            {/* <button onClick={() => navigate('/additem')}>Add new ITem</button> */}
 
             <div>
                 <table className="table mt-5">

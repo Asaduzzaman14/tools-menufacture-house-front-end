@@ -33,8 +33,8 @@ const ManageItemCard = ({ product, index }) => {
     }
 
     return (
-        <tr className='manage-item w-50'>
-            <th scope="row">{index}</th>
+        <tr className='manage-item '>
+            <td>{index}</td>
             <td><img src={img} alt="" /></td>
             <td>{name}</td>
             <td>{name}</td>

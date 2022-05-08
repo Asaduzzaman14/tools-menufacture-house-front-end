@@ -11,7 +11,8 @@ const Card = ({ item }) => {
             <div className='card-body col-12'>
                 <img src={item.img} alt="" />
                 <h3>Name: {item.name}</h3>
-                <p>supplier name: {item.desc}</p>
+                <p>desc : {item.desc.split(0, 20)}</p>
+                <p>supplier name: {item.suplierName}</p>
                 <p>price: {item.price}</p>
                 <p>quantity: {item.quantity}</p>
 

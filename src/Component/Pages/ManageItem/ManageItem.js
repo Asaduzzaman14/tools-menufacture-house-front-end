@@ -12,7 +12,7 @@ const ManageItem = () => {
     const [products, setProduct] = useInventory()
 
     return (
-        <div>
+        <div className='container-fluid'>
             <h2>Manage admin item {products.length}</h2>
 
             <button className='add-btn' onClick={() => navigate('/additem')}>Add new ITem</button>
@@ -20,9 +20,9 @@ const ManageItem = () => {
 
             }
 
-            <table className="table ">
+            <table className="table container-fluid col-sm-12">
 
-                <thead>
+                <thead className='container-fluid'>
                     <tr>
                         <th scope="col">Item</th>
                         <th scope="col">img</th>

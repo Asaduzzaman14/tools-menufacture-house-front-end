@@ -63,6 +63,7 @@ const MyItem = () => {
                                     <th scope="col">Email</th>
                                     <th scope="col">suplier</th>
                                     <th scope="col">quantity</th>
+                                    <th scope="col">Update</th>
                                     <th scope="col">Delete</th>
                                 </tr>
                             </thead>

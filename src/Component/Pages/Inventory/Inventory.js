@@ -32,7 +32,7 @@ const Inventory = () => {
 
 
 
-
+            <button onClick={() => navigate('/manageitem')} className='add-btn mt-5'>Manage Inventory</button>
 
         </div>
     );

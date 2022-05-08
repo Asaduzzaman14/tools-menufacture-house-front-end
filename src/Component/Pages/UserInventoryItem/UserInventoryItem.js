@@ -1,15 +1,20 @@
 import React from 'react';
+import { AiFillDelete } from 'react-icons/ai';
+import { GrUpdate } from 'react-icons/gr';
+import './UserInventoryItem.css'
+
 
 const UserInventoryItem = ({ item, keys, handelDelete }) => {
     const { name, _id, email, img, suplierName, quantity } = item
     return (
-        <tr>
+        <tr className='my-item'>
             <th scope="row">{keys}</th>
             <td>{name}</td>
             <td>{email}</td>
             <td>{suplierName}</td>
             <td>{quantity}</td>
-            <td><button onClick={() => handelDelete(_id)} >Delete</button></td>
+            <td><span className='update-icon' onClick={() => { }} ><GrUpdate></GrUpdate></span></td>
+            <td><span className='delete-icon' onClick={() => handelDelete(_id)} ><AiFillDelete></AiFillDelete></span></td>
         </tr >
     );
 };

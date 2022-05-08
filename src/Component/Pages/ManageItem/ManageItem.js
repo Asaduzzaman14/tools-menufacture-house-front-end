@@ -15,7 +15,7 @@ const ManageItem = () => {
         <div>
             <h2>Manage admin item {products.length}</h2>
 
-            <button onClick={() => navigate('/additem')}>Add new ITem</button>
+            <button className='add-btn' onClick={() => navigate('/additem')}>Add new ITem</button>
             {products.length === 0 ? <Loading></Loading> : ''
 
             }

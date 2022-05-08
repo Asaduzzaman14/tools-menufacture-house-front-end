@@ -12,14 +12,14 @@ const Worker = () => {
             .then(data => setworkers(data))
     }, [])
 
-
+    const displaworker = workers.slice(0, 6)
     return (
         <div>
             <h2 className='mt-5 mb-3 '>Meet our Worker</h2>
 
             <div className='worker-container'>
                 {
-                    workers.map(worker => <SingleWorker
+                    displaworker.map(worker => <SingleWorker
                         worker={worker}
                         key={worker._id}
                     ></SingleWorker>)

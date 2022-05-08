@@ -1,0 +1,32 @@
+.worker-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+/*  */
+.worker {
+    margin-top: 30px;
+    background-color: aliceblue;
+    border: 1px solid;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.worker img {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .worker-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import bannerImg from '../../../image/banner.webp'
 import Inventory from '../Inventory/Inventory';
+import Worker from '../Worker/Worker';
 import './Home.css'
 
 
@@ -14,7 +15,12 @@ const Home = () => {
                 <h2 className='banner-title'>Wearhouse management web</h2>
             </div>
 
+            {/* inventory */}
             <Inventory></Inventory>
+
+            <Worker></Worker>
+
+
         </>
     );
 };

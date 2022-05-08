@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import VisitOne from './VisitOne';
+
+import './Visit.css'
 
 const Visit = () => {
 
@@ -9,12 +12,20 @@ const Visit = () => {
             .then(data => setWarehouse(data))
     }, [])
 
-    const visit = warehouse.slice(0, 6)
+    const visit = warehouse.slice(6, 12)
 
     return (
-        <div>
-            <h2>Visit us</h2>
-            room{visit.length}
+        <div className='visitOne-container-main'>
+            <h2 className='visting-title' >Visit Our WearHouse </h2>
+
+            <div className='visitOne-container'>
+                {
+                    visit.map(visitOne => <VisitOne
+                        visitOne={visitOne}
+                        key={visitOne._id}
+                    ></VisitOne>)
+                }
+            </div>
         </div>
     );
 };

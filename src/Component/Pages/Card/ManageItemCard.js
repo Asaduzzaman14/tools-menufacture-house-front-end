@@ -17,7 +17,7 @@ const ManageItemCard = ({ product, index }) => {
         const proceed = window.confirm('Are you sure')
         if (proceed) {
 
-            const url = `https://arcane-cove-19592.herokuapp.com/item/${id}`
+            const url = `http://localhost:5000/item/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

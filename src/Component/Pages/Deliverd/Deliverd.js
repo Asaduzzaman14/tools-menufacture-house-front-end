@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
 import useItemDetails from '../../../hooks/useItemDetail';
@@ -6,32 +6,43 @@ import Loading from '../Loading/Loading';
 import './Deliverd.css'
 
 const Deliverd = () => {
-    const navigate = useNavigate()
+    const [item, setItems] = useState([])
     const { id } = useParams()
 
-    const [item] = useItemDetails(id)
-
-
     const { name, img, desc, supplierName, quantity, price } = item
-    console.log(supplierName, 'hhhhhhhh');
-    const [quant, setQuentitys] = useState()
+    const [newQuantity, setNewQuantity] = useState()
 
-    const { register, handleSubmit, reset } = useForm();
-    const onSubmit = data => {
-        const url = `https://arcane-cove-19592.herokuapp.com/update/${id}`
+
+    useEffect(() => {
+        const url = `http://localhost:5000/item/${id}`
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setItems(data))
+
+    }, [id, newQuantity])
+
+
+
+    const handelFrom = (e) => {
+        e.preventDefault()
+        const q = e.target.quantity.value;
+        const total = parseInt(q) + parseInt(quantity)
+        const url = `http://localhost:5000/update/${id}`
         fetch(url, {
-            method: 'patch',
+            method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify({ total })
         })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                reset()
+            .then(res => {
+                console.log(res);
+                res.json()
             })
-    };
+            .then(data => {
+                setNewQuantity(total)
+            });
+    }
 
     if (!item) {
         return <Loading></Loading>
@@ -51,12 +62,15 @@ const Deliverd = () => {
                     <p>price: ${price}</p>
                     <p>quantity: {quantity}</p>
 
-                    <button className='buttons' onClick={() => { setQuentitys(quant + 1) }}>Delivered</button>
+                    <button className='buttons' onClick={() => { }}>Delivered</button>
+                    <div>
 
-                    <from className='d-flex ms-5' onSubmit={handleSubmit(onSubmit)}>
-                        <input className='mb-3' placeholder='quantity' type="number" {...register("quantity")} />
-                        <input type="submit" value="ReStock" className='buttons mb-3' />
-                    </from>
+                        <form className=' ms-5 ms-' onSubmit={handelFrom}>
+                            <input className='mt-5' placeholder='quantity' type="number" name='quantity' required />
+                            <br />
+                            <input type="submit" value="ReStock" className='buttons mb-3' />
+                        </form>
+                    </div>
 
                 </div>
             </div>

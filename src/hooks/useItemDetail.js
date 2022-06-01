@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react"
 
 
-const useItemDetails = (itemId, id) => {
+const useItemDetails = (itemId, id, handelFrom) => {
 
     const [item, setItems] = useState([])
 
     useEffect(() => {
-        const url = `https://arcane-cove-19592.herokuapp.com/item/${itemId}`
+        const url = `http://localhost:5000/item/${itemId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setItems(data))
 
-    }, [itemId, id])
+    }, [itemId, id, handelFrom])
     return [item, setItems]
 }
 

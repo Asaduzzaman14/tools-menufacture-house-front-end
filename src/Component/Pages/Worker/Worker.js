@@ -7,7 +7,7 @@ const Worker = () => {
 
     const [workers, setworkers] = useState([])
     useEffect(() => {
-        fetch('https://arcane-cove-19592.herokuapp.com/extra')
+        fetch('http://localhost:5000/extra')
             .then(res => res.json())
             .then(data => setworkers(data))
     }, [])

@@ -47,15 +47,20 @@ const MyItem = () => {
 
 
     return (
-        <div>
-            <h2>This is my item {items.length}</h2>
+        <div className='text-white pt-5' style={{ minHeight: "100vh" }}>
+            <h2>MY ITEM {items.length}</h2>
 
             <div>
                 <table className="table mt-5">
                     {
-                        items.length === 0 ? <>YOU HAVE NO ITEM             <button className='add-btn' onClick={() => navigate('/additem')}>Please Add new ITem</button>
-                        </>
-                            : <thead>
+                        items.length === 0
+                            ?
+                            <div>
+                                <p className='summery text-white'>YOU HAVE NO ITEM</p>
+                                <button className='add-btn allButton' onClick={() => navigate('/additem')}>Please Add new ITem</button>
+                            </div>
+                            :
+                            <thead>
                                 <tr>
                                     <th scope="col">No</th>
                                     <th scope="col">Name</th>

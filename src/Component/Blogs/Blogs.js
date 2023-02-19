@@ -4,9 +4,9 @@ import './Blogs.css'
 const Blogs = () => {
     return (
         <div className='QandA-container '>
-
-            <div className='q-and-a p-4 '>
-                <h6> 2.Differences between sql and nosql databases.
+            <h2 className='text-white py-5'>BLOGS</h2>
+            <div className='q-and-a rounded p-4 '>
+                <h6>Differences between sql and nosql databases.
                     SQL</h6>
 
                 <div className='ans mx-auto'>
@@ -33,8 +33,8 @@ const Blogs = () => {
                 </div>
             </div>
 
-            <div className="q-and-a p-4">
-                <h6> 3.What is the purpose of jwt and how does it work
+            <div className="q-and-a rounded p-4">
+                <h6>What is the purpose of jwt and how does it work
                     JWT OR JSON Web Token</h6>
 
                 <div className='ans mx-auto'>
@@ -58,7 +58,7 @@ const Blogs = () => {
             </div>
 
 
-            <div className='q-and-a'>
+            <div className='q-and-a rounded'>
                 <h5>Difference between javascript and nodejs
                     NodeJs? </h5>
 

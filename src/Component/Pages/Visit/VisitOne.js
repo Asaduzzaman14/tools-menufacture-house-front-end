@@ -8,7 +8,7 @@ const VisitOne = ({ visitOne }) => {
     return (
         <div>
             <div className='worker'>
-                <img src={img} alt="" />
+                <img className='w-100' src={img} alt="" />
                 <h5 className='mt-4'>{name}</h5>
                 <p>{desc}</p>
                 <button onClick={() => navigate('/about')} className='add-btn'>visit More</button>

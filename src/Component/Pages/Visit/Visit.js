@@ -16,7 +16,7 @@ const Visit = () => {
 
     return (
         <div className='visitOne-container-main'>
-            <h2 className='visting-title' >Visit Our WearHouse </h2>
+            <h2 className='section-title' >Visit Our WearHouse </h2>
 
             <div className='visitOne-container'>
                 {

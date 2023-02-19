@@ -74,7 +74,7 @@ const Header = () => {
                                 </>
                                     :
                                     <Nav.Link as={Link} to="/login">
-                                        <button className='sign-out-btn'>Login    </button>
+                                        <button className='sign-out-btn'>LOGIN</button>
                                     </Nav.Link>
 
                             }

@@ -15,7 +15,8 @@ const Worker = () => {
     const displaworker = workers.slice(0, 6)
     return (
         <div>
-            <h2 className='mt-5 mb-3 '>Meet our Worker</h2>
+            {/* <h2 className='mt-5 mb-3 '>Meet our Worker</h2> */}
+            <h2 className='text-white mt-5'>MEET OUR WORKER</h2>
 
             <div className='worker-container'>
                 {

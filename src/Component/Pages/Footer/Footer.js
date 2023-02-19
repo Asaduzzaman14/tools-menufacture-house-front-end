@@ -1,7 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { BsFacebook, BsGithub } from 'react-icons/bs';
+import { AiFillLinkedin } from 'react-icons/ai';
+
 import './Footer.css'
 
 const Footer = () => {
+
+    const date = new Date()
+    const year = date.getFullYear()
+    console.log(year);
+
     return (
         <div>
 
@@ -41,7 +50,18 @@ const Footer = () => {
                         <li><span>github</span></li>
                     </div>
                 </div>
-                <p className='copyright-text'>&copy; copyright 2022 </p>
+
+                <hr className='mt-4 text-white' />
+                <p className='copyright-text'>&copy; copyright {year} </p>
+                <div className='footer_icons'>
+                    <Link to={''}><BsFacebook></BsFacebook></Link>
+                    <Link to={''}><AiFillLinkedin></AiFillLinkedin></Link>
+                    <Link to={''}><BsGithub></BsGithub></Link>
+                    <Link to={''}><BsFacebook></BsFacebook></Link>
+                    <Link to={''}><AiFillLinkedin></AiFillLinkedin></Link>
+                    <Link to={''}><BsGithub></BsGithub></Link>
+
+                </div>
             </div>
         </div>
     );

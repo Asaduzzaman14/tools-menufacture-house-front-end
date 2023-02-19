@@ -9,12 +9,12 @@
     padding: 5px 12px;
     border-radius: 5px;
     color: #fff;
-    background-color: rgb(74, 102, 32);
+    /* background-color: rgb(74, 102, 32); */
 
 }
 
 .card-body img {
-    height: 150px
+    height: 100px
 }
 
 /* other component */
@@ -28,9 +28,10 @@
 
 .manage-item {
     width: 100%;
+    align-items: center !important;
 }
 
 .manage-item img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }

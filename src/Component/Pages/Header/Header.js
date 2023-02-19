@@ -11,7 +11,6 @@ import './Header.css'
 const Header = () => {
 
     const [user] = useAuthState(auth);
-
     const location = useLocation();
     const path = location.pathname;
 

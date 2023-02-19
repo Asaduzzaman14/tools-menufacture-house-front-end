@@ -8,12 +8,14 @@
     border: none;
     padding: 6px 20px;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #670957, #080617);
+    background-image: linear-gradient(to right, #670957, #16113a);
     color: #fff;
+    font-weight: 600;
+    box-shadow: 1px 1px 8px #7d7a7a;
 }
 
 .sign-out-btn:hover {
-    background-image: linear-gradient(to right, #840b6f, #16113a);
+    background-image: linear-gradient(to right, #7e116c, #221b53);
 
 }
 

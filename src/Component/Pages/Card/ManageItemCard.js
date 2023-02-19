@@ -1,11 +1,10 @@
 import React from 'react';
 import useProducts from '../../../hooks/useInventory';
-import './Card.css'
-
-import { AiFillDelete } from 'react-icons/ai';
-import { GrUpdate } from 'react-icons/gr';
+import { AiFillEye } from 'react-icons/ai';
+import { MdDelete } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
+import './Card.css'
 
 const ManageItemCard = ({ product, index }) => {
     const navigate = useNavigate()
@@ -14,7 +13,8 @@ const ManageItemCard = ({ product, index }) => {
     const [inventory, setInventory] = useProducts()
 
     const handelDelete = (id) => {
-        const proceed = window.confirm('Are you sure')
+        const proceed = window.confirm('Are you sure you went delete this item')
+        console.log(proceed);
         if (proceed) {
 
             const url = `https://warehouse-management-server-gray.vercel.app/item/${id}`
@@ -34,14 +34,19 @@ const ManageItemCard = ({ product, index }) => {
 
     return (
         <tr className='manage-item '>
-            <td>{index}</td>
-            <td><img src={img} alt="" /></td>
-            <td>{name}</td>
-            <td>{name}</td>
-            <td>{price}</td>
-            <td>{quantity}</td>
-            <td><span className='update-icon' onClick={() => navigate(`/updateitem/${_id}`)} ><GrUpdate></GrUpdate></span></td>
-            <td><span className='delete-icon' onClick={() => handelDelete(_id)} ><AiFillDelete></AiFillDelete></span></td>
+            <td className='align-middle'>{index}</td>
+            <td className='align-middle'><img src={img} alt="" /></td>
+            <td className='align-middle'>{name}</td>
+            <td className='align-middle'>{name}</td>
+            <td className='align-middle'>{price}</td>
+            <td className='align-middle'>{quantity}</td>
+
+            <td className='align-middle'>
+                <div className='d-flex justify-content-center gap-2'>
+                    <span className='update-icon' onClick={() => navigate(`/updateitem/${_id}`)} ><AiFillEye></AiFillEye></span>
+                    <span className='delete-icon' onClick={() => handelDelete(_id)} ><MdDelete></MdDelete></span>
+                </div>
+            </td>
 
         </tr>
     );

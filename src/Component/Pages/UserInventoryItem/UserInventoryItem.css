@@ -1,14 +1,13 @@
 .delete-icon {
-    background-color: rgb(213, 158, 158);
+    background-color: #35ac67;
     font-size: 30px;
     color: rgb(241, 7, 7);
     border-radius: 8px;
 }
 
 .update-icon {
-    background-color: rgb(53, 172, 103);
+    background-color: #35ac67;
     font-size: 30px;
-    color: rgb(83, 198, 108);
     border-radius: 8px;
     padding: 3px;
 }

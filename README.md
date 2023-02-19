@@ -1,6 +1,6 @@
 
-# live site: [https://warehouse-management-6236d.web.app](https://warehouse-management-6236d.web.app)
-
+### live site: [https://warehouse-management-6236d.web.app](https://warehouse-management-6236d.web.app)
+### server site code: [https://github.com/Asaduzzaman14/warehouse-management-server](https://github.com/Asaduzzaman14/warehouse-management-server)
 
 
 #example project 

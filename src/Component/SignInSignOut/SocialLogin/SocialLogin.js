@@ -10,13 +10,8 @@ const SocialLogin = () => {
 
     const navigate = useNavigate()
     const location = useLocation()
-
     const from = location.state?.from.pathname || '/'
-
-
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-
-
     let hookError;
 
     if (loading) {
@@ -26,26 +21,23 @@ const SocialLogin = () => {
         hookError = <div>
             <p>Error: {error?.message} </p>
         </div>
-
     }
 
     if (user) {
         navigate(from, { replace: true })
     }
 
-
-
     return (
         <div>
             <div>
                 <div className='d-flex align-items-center w-50 mx-auto'>
                     <div style={{ height: '1px' }} className='bg-primary w-50'></div>
-                    <p className='mt-2 mx-2'>or</p>
+                    <p className='mt-2 mx-2 text-white'>or</p>
                     <div style={{ height: '1px' }} className='bg-primary w-50'></div>
                 </div>
                 <p className='text-danger'>{hookError}</p>
                 <div className=''>
-                    <button onClick={() => signInWithGoogle()} className='btn-info rounded p-1 mb-2 d-block mx-auto w-50'>
+                    <button onClick={() => signInWithGoogle()} className='bg-[#000] rounded p-1 mb-2 d-block mx-auto w-50'>
                         <img style={{ width: '30px', marginRight: '20px' }} src={google} alt="" />
                         Google sign In
                     </button>

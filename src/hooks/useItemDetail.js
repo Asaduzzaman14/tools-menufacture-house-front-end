@@ -6,7 +6,7 @@ const useItemDetails = (itemId, id, handelFrom) => {
     const [item, setItems] = useState([])
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${itemId}`
+        const url = `https://warehouse-management-server-gray.vercel.app/item/${itemId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setItems(data))

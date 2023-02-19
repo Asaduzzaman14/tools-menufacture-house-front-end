@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImg from '../../../image/banner.webp'
+import bannerImg from '../../../image/banner.jpg'
 import Inventory from '../Inventory/Inventory';
 import Visit from '../Visit/Visit';
 import Worker from '../Worker/Worker';
@@ -16,9 +16,7 @@ const Home = () => {
                 <h2 className='banner-title'>Welcome to Fruites Wearhouse </h2>
             </div>
 
-            {/* inventory */}
             <Inventory></Inventory>
-
             <Worker></Worker>
             <Visit></Visit>
 

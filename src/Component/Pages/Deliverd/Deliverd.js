@@ -14,7 +14,7 @@ const Deliverd = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${id}`
+        const url = `https://warehouse-management-server-gray.vercel.app/item/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setItems(data))
@@ -27,7 +27,7 @@ const Deliverd = () => {
         e.preventDefault()
         const q = e.target.quantity.value;
         const total = parseInt(q) + parseInt(quantity)
-        const url = `http://localhost:5000/update/${id}`
+        const url = `https://warehouse-management-server-gray.vercel.app/update/${id}`
         fetch(url, {
             method: 'PATCH',
             headers: {

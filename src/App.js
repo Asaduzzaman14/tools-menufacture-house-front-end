@@ -17,7 +17,7 @@ import Blogs from './Component/Blogs/Blogs';
 import UpdateItem from './Component/Pages/UpdateItem/UpdateItem';
 
 function App() {
-
+  // https://warehouse-management-server-gray.vercel.app/item
 
   return (
     <div className="App">

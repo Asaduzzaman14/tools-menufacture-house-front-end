@@ -13,7 +13,7 @@ const UpdateItem = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/update/${id}`
+        const url = `https://warehouse-management-server-gray.vercel.app/update/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -7,7 +7,7 @@ const Visit = () => {
 
     const [warehouse, setWarehouse] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/extra')
+        fetch('https://warehouse-management-server-gray.vercel.app/extra')
             .then(res => res.json())
             .then(data => setWarehouse(data))
     }, [])

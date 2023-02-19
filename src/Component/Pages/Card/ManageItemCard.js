@@ -17,7 +17,7 @@ const ManageItemCard = ({ product, index }) => {
         const proceed = window.confirm('Are you sure')
         if (proceed) {
 
-            const url = `http://localhost:5000/item/${id}`
+            const url = `https://warehouse-management-server-gray.vercel.app/item/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

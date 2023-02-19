@@ -14,3 +14,74 @@
 .sign-out-btn:hover {
     background-color: #354b31;
 }
+
+
+.header_wrap_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .header_wrap_left {
+        width: 60%;
+    }
+
+    .header_wrap_right {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .header_wrap_left {
+        width: 70%;
+    }
+
+    .header_wrap_right {
+        width: 25%;
+    }
+
+    .handleExtra {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header_wrap_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5rem;
+        width: 50%;
+    }
+
+    .handleForCenter {
+        text-align: center !important;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    .header_wrap_left {
+        width: 100%;
+    }
+
+    .header_wrap_right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+    .btnhandleForRespo {
+        margin-left: 25px;
+    }
+
+    .handleForCenter {
+        text-align: center !important;
+    }
+}

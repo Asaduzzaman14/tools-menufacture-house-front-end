@@ -14,15 +14,11 @@ const Login = () => {
 
     const emailRef = useRef('')
     const passwordRef = useRef('')
-
     const navigate = useNavigate()
     const location = useLocation()
-
     const from = location.state?.from.pathname || '/'
-
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
-
 
     let hookErrors;
     if (error) {
@@ -36,7 +32,6 @@ const Login = () => {
         return <Loading></Loading>
     }
 
-
     if (user) {
         navigate(from, { replace: true })
     }
@@ -48,8 +43,6 @@ const Login = () => {
         signInWithEmailAndPassword(email, password)
 
     }
-
-
 
     const resetPassword = async () => {
         const email = emailRef.current.value
@@ -63,16 +56,13 @@ const Login = () => {
         }
     }
 
-
-
     const handelNavigate = () => {
         navigate('/register')
     }
 
-
     return (
         <div>
-            <h2 className='title'>Welcome</h2>
+            <h2 className='title pt-5 text-white title'>LOGIN</h2>
             <form className='form' onSubmit={handelLoginForm}>
                 {/* <input className='input-fild' name='email' type="text" placeholder='User Email' required />
                 <input className='input-fild' name='password' type="password" placeholder='Password' required /> */}

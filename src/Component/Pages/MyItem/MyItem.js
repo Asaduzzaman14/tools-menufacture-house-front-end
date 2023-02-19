@@ -16,7 +16,7 @@ const MyItem = () => {
         const getItem = async () => {
             const email = user.email
             console.log(email);
-            const url = `http://localhost:5000/myitem?email=${email}`
+            const url = `https://warehouse-management-server-gray.vercel.app/myitem?email=${email}`
             const { data } = await axios.get(url)
             setItems(data);
 
@@ -28,7 +28,7 @@ const MyItem = () => {
         const proceed = window.confirm('Are you sure')
         if (proceed) {
 
-            const url = `http://localhost:5000/item/${id}`
+            const url = `https://warehouse-management-server-gray.vercel.app/item/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

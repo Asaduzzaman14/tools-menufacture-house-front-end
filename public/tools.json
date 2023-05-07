@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "name": " screwdriver",
+        "img": "https://i.ibb.co/cTwf1DD/tool1.jpg ",
+        "price": 98,
+        "minOrderQuantity": 220,
+        "availableQuantity": 3464,
+        "desc": "A cordless drill and other items also were stolen"
+    },
+    {
+        "_id": 12,
+        "name": "Wrench.",
+        "img": "https://i.ibb.co/9ZbYzGN/tool3.jpg",
+        "price": 50,
+        "minOrderQuantity": 100,
+        "availableQuantity": 4654,
+        "desc": "A bunch of m4 nuts for threaded screws!"
+    },
+    {
+        "_id": 14,
+        "name": " cordless drill",
+        "img": "https://i.ibb.co/PzTgjXQ/tool4.jpg",
+        "price": 68,
+        "minOrderQuantity": 100,
+        "availableQuantity": 3464,
+        "desc": " cordless drill and other items also were stolen."
+    },
+    {
+        "_id": 13,
+        "name": "Hamer &  screwdriver",
+        "img": "https://i.ibb.co/BPDvdvx/tool5.jpg",
+        "price": 46,
+        "minOrderQuantity": 100,
+        "availableQuantity": 345,
+        "desc": "She used a hammer to chip away the stone."
+    },
+    {
+        "_id": 114,
+        "name": "Bradawl",
+        "img": "https://i.ibb.co/KDnstdZ/tool6.jpg",
+        "price": 57,
+        "minOrderQuantity": 100,
+        "availableQuantity": 344,
+        "desc": "A bunch of m4 nuts for threaded screws!"
+    },
+    {
+        "_id": 115,
+        "name": "Wrench.",
+        "img": "https://i.ibb.co/f8SjyVj/tool8.jpg",
+        "price": 24,
+        "minOrderQuantity": 100,
+        "availableQuantity": 654,
+        "desc": "The bolts can only be released with a wrench."
+    }
+]

@@ -1,52 +1,79 @@
 import './App.css';
-import Header from './Component/Pages/Header/Header';
 import { Route, Routes } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './Component/SignInSignOut/Login/Login';
-import Register from './Component/SignInSignOut/Register/Register';
-import MyItem from './Component/Pages/MyItem/MyItem';
-import Home from './Component/Pages/Home/Home';
-import PrivateRoute from './Component/SignInSignOut/PrivateRoute/PrivateRoute';
-import Footer from './Component/Pages/Footer/Footer';
-import AddItem from './Component/Pages/AddItem/AddItem';
-import About from './Component/Pages/About/About';
-import Deliverd from './Component/Pages/Deliverd/Deliverd';
-import ManageItem from './Component/Pages/ManageItem/ManageItem';
-import NotFound from './Component/Pages/NotFound/NotFound';
-import Blogs from './Component/Blogs/Blogs';
-import UpdateItem from './Component/Pages/UpdateItem/UpdateItem';
+import Navbar from './Components/Home/Navbar';
+import About from './Components/Home/About';
+import Review from './Components/Home/Review';
+import Home from './Components/Home/Home';
+import Login from './Components/Login/Login';
+import Signup from './Components/Login/Signup';
+import RequirAuth from './Components/Login/RequirAuth';
+import Purchase from './Components/Routes/Purchase';
+import NotFound from './Components/Shared/NotFound';
+import Dashborad from './Components/Dashboard/Dashborad';
+import Blogs from './Components/Home/Blogs';
+import Users from './Components/Dashboard/Users';
+import MyOrder from './Components/Dashboard/MyOrder';
+import AddReview from './Components/Dashboard/AddReview';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import AddProducts from './Components/Dashboard/AddProducts';
+import MyPortfolio from './Components/Dashboard/MyPortfolio';
+import ManageOrders from './Components/Dashboard/ManageOrders';
+import ManageTools from './Components/Dashboard/ManageTools';
+import MyProfile from './Components/Dashboard/MyProfile';
+import MyProfileInfo from './Components/Dashboard/MyProfileInfo';
+import Payment from './Components/Dashboard/Payment';
+import Aos from 'aos';
+import Header from './Components/Shared/Header';
+
+Aos.init();
+
 
 
 function App() {
-  // https://warehouse-management-server-gray.vercel.app/item
-
   return (
     <div className="App">
-      <Header></Header>
+      {/* <Navbar ></Navbar> */}
+      <Header />
+
       <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
+        <Route path="/" element={<Home></Home>}> </Route>
+        <Route path="/home" element={<Home></Home>}> </Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}> </Route>
+        <Route path="/myProfileInfo" element={<MyProfileInfo></MyProfileInfo>}> </Route>
 
 
-        <Route path='/myitem' element={<PrivateRoute>
-          <MyItem></MyItem>
-        </PrivateRoute>}></Route>
+        <Route path="/purchase/:id" element={<RequirAuth><Purchase></Purchase></RequirAuth>}> </Route>
+        <Route path="/about" element={<> <About></About></>}> </Route>
 
-        <Route path='/deliverd/:id' element={<PrivateRoute>
-          <Deliverd></Deliverd>
-        </PrivateRoute>}></Route>
 
-        <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
-        <Route path='/updateitem/:id' element={<UpdateItem></UpdateItem>}></Route>
-        <Route path='/additem' element={<AddItem></AddItem>}></Route>
-        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
-        <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='*' element={<NotFound></NotFound>}></Route>
+        <Route path="dashborad" element={<RequirAuth><Dashborad></Dashborad></RequirAuth>}>
+
+          <Route index element={<MyPortfolio></MyPortfolio>}> </Route>
+          <Route path="addreview" element={<AddReview></AddReview>}> </Route>
+          <Route path="orders" element={<MyOrder></MyOrder>}> </Route>
+          <Route path="users" element={<Users></Users>}> </Route>
+          <Route path="orders/payment/:id" element={<Payment></Payment>}> </Route>
+
+
+          <Route path="addproducts" element={<AddProducts></AddProducts>}> </Route>
+          <Route path="allorders" element={<ManageOrders></ManageOrders>}> </Route>
+          <Route path="manageTools" element={<ManageTools></ManageTools>}> </Route>
+          <Route path="myprofile" element={<MyProfile></MyProfile>}> </Route>
+
+
+        </Route>
+
+
+
+        <Route path="/login" element={<Login></Login>}> </Route>
+        <Route path="/signup" element={<Signup></Signup>}> </Route>
+        <Route path="*" element={<NotFound></NotFound>}> </Route>
+
+
       </Routes>
-      <Footer></Footer>
-
-    </div>
+      <ToastContainer></ToastContainer>
+    </div >
   );
 }
 

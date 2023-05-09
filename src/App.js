@@ -32,7 +32,7 @@ Aos.init();
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-primary">
       {/* <Navbar ></Navbar> */}
       <Header />
 

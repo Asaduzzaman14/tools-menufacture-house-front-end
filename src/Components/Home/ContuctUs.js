@@ -4,8 +4,9 @@ import contuct from '../Assets/extra/contuct.webp'
 
 const ContuctUs = () => {
     return (
-        <div className='bg-base-200 mt-10'>
-            <h2 className='text-3xl font-mono font-bold mt-10 pt-5 underline underline-offset-8 my-4 text-primary'>Contuct us</h2>
+        <div className=''>
+            <h2 className='mt-2 mb-5 text-2xl lg:text-3xl p-5 text-white font-semibold'>CONTUCT US</h2>
+
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img className='rounded-2xl w-lg' src={contuct} alt="contuct " />

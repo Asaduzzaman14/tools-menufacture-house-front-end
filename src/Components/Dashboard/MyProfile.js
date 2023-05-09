@@ -32,7 +32,7 @@ const MyProfile = () => {
             <br />
 
             {
-                userDetail.map(detail => {
+                userDetail?.map(detail => {
                     return <div className='mt-5 lg:max-w-50'>
 
                         <h3 className='text-xl'>Your Email : {detail?.email}</h3>

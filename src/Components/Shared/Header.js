@@ -23,7 +23,7 @@ const Header = () => {
 
     return (
         <>
-            <div className=' shadow-md z-50 w-full  relative top-0 left-0'>
+            <div className=' shadow-md z-50 w-full relative top-0 left-0'>
                 {/* <div className=' md:flex justify-between items-center bg-gray-900 text-white'> */}
                 <div className='flex justify-between lg:px-10  bg-gray-900 text-white'>
 
@@ -74,7 +74,11 @@ const Header = () => {
                                                     DASHBOARD
                                                 </Link>
                                             </li>
-                                            <button onClick={logout} className='btn btn-ghost text-xl' >Sign out</button>
+                                            <li style={{ cursor: 'pointer' }} onClick={logout} className='md:ml-3 md:my-0 pointer px-2 py-4 transition-all duration-500 ease-in '>
+                                                <span className='text-lg text-gray-200 p-2 px-3  border rounded-sm hover:text-red-600 font-semibold transition-all duration-400'>
+                                                    SIGN OUT
+                                                </span>
+                                            </li>
                                         </>
                                         :
 

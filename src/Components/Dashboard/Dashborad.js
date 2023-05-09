@@ -22,7 +22,7 @@ const Dashborad = () => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-                    <ul className="bg-blue-900  text-white  font-semibold menu p-4 overflow-y-auto w-48  font-serif ">
+                    <ul className="bg-[#041C32] border-x-2  border-x-red-500 text-white  font-semibold menu p-4 overflow-y-auto w-48  font-serif ">
 
                         <li><Link to=''>Protfolio</Link></li>
 

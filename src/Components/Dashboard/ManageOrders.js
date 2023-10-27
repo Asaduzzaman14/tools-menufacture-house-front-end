@@ -11,10 +11,6 @@ const ManageOrders = () => {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
 
-        // headers: {
-        //     authorization: `Bearer ${localStorage.getItem('accessToken')}`
-        // }
-
     }).then(res => res.json()));
     console.log(orders);
 
@@ -24,10 +20,10 @@ const ManageOrders = () => {
 
     return (
         <div>
-            <h2 className="text-2xl text-white bg-red-900">Manage All Orders</h2>
+            <h2 className="text-2xl text-white font-semibold py-2">Manage All Orders: {orders?.length}</h2>
 
             <div>
-                <h2 className="text-2xl">All Orders:{orders?.length}</h2>
+                {/* <h2 className=" text-2xl text-white font-semibold mb-3">All Orders: {orders?.length}</h2> */}
                 <div className="overflow-x-auto">
                     <table className="table w-full">
                         <thead>

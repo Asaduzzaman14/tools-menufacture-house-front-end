@@ -27,12 +27,9 @@ const Parts = () => {
 
     const { data: tools, isLoading, refetch } = useQuery('parts', () => fetch('https://manufacturer-house-server-ac2k.vercel.app/parts', {
         method: 'GET',
-        headers: {
-            authorization: `Bearer ${localStorage.getItem('accessToken')}`
-        }
     }).then(res => res.json()));
     // if (isLoading) {
-       
+
     //     return <Loading></Loading>
     // }
 
@@ -40,9 +37,9 @@ const Parts = () => {
         <div className='bg-primary p-5'>
             <h2 className='mt-2 lg:mt-10 mb-5 text-2xl lg:text-3xl p-5 text-white font-semibold'> OUR TOOLS</h2>
 
-                  {isLoading && <Loading/>}
+            {isLoading && <Loading />}
             <div className='grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-x-5'>
-            
+
                 {
                     tools?.map(tool => <Card
                         tool={tool}

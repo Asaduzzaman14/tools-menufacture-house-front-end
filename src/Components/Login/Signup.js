@@ -5,6 +5,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import useToken from '../hooks/useToken';
 import Loading from '../Shared/Loading';
+import { AiTwotoneEyeInvisible } from 'react-icons/ai';
+import { FaEye } from 'react-icons/fa';
 
 
 const Signup = () => {
@@ -149,7 +151,10 @@ const Signup = () => {
                                 <span
                                     onClick={() => setPasswordVisivility(!passwordVisivility)}
                                     className='cursor-pointer'
-                                >icon</span>
+                                >
+                                    {passwordVisivility ? <AiTwotoneEyeInvisible /> : <FaEye />}
+
+                                </span>
                             </div>
 
                             <label className="label">

@@ -13,7 +13,7 @@ const Banner = () => {
             <div className="hero-overlay  bg-opacity"></div>
             <div className="hero-content text-center text-">
                 <div className="max-w-md">
-                    <h1 className="mb-5 text-4xl font-bold text-base-200">Welcome to  <br></br> Friends<span className='text-secondary'>Factory</span></h1>
+                    <h1 className="mb-5 text-4xl font-bold text-base-200">Welcome to  <br></br> Tools<span className='text-secondary'>Factory</span></h1>
                     <p className="mb-5 text-md text-base-200 font-bold ">We have pleasure in inttroduction ourselves as one of the leading hands tools manufacture and esparts in Bangladesh. We are dadicated to menufacture high quality hands ranging from manul tools</p>
                 </div>
             </div>

@@ -37,7 +37,7 @@ const AddProducts = () => {
         <div>
             <div
                 className='text-center py-5 mt-15'>
-                <h2 className=' text-3xl mb-3'>ADD YOUR Tools</h2>
+                <h2 className=' text-3xl text-white font-semibold mb-3'>ADD YOUR Tools</h2>
 
                 <form onSubmit={handelFormSubmit}>
                     <input type="text" name='ToolsName' placeholder="Tool Name" className="input input-bordered input-md w-full max-w-sm mb-4" required />
@@ -54,7 +54,7 @@ const AddProducts = () => {
                     <br />
 
 
-                    <input type="submit" value={"ADD PRODUCT"} className="input bg-primary font-bold text-lg text-white input-bordered input-md w-full max-w-xs mb-4" />
+                    <input type="submit" value={"ADD PRODUCT"} className="input bg-info font-bold text-lg text-white input-bordered input-md w-full max-w-xs mb-4" />
 
                 </form>
             </div>

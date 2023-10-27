@@ -1,41 +1,92 @@
-import React from 'react';
-const Footer = () => {
-    return (
-        <footer className=" bg-primary text-white">
-            <div className='footer  text-white p-10' >
-                <div >
-                    <span className="footer-title">Services</span>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
-                </div>
-                <div>
-                    <span className="footer-title">Company</span>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </div>
-                <div>
-                    <span className="footer-title">Legal</span>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </div>
-                <div>
-                    <span className="footer-title">Legal</span>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </div>
-            </div>
+import React from "react";
 
-            <div className='text-center py-10'>
-                <p>Copyright © 2023 - All right reserved </p>
+import "./footer.css";
+
+const Footer = () => {
+  return (
+    <>
+      <footer class='footer-comp px-10'>
+        <div class='footer-container'>
+          <div class='row'>
+            <div class='footer-col text-left'>
+              <h4>company</h4>
+              <ul>
+                <li>
+                  <a href='#'>about us</a>
+                </li>
+                <li>
+                  <a href='#'>our services</a>
+                </li>
+                <li>
+                  <a href='#'>privacy policy</a>
+                </li>
+                <li>
+                  <a href='#'>affiliate program</a>
+                </li>
+              </ul>
             </div>
-        </footer>
-    );
+            <div class='footer-col'>
+              <h4>get help</h4>
+              <ul>
+                <li>
+                  <a href='#'>FAQ</a>
+                </li>
+                <li>
+                  <a href='#'>shipping</a>
+                </li>
+                <li>
+                  <a href='#'>returns</a>
+                </li>
+                <li>
+                  <a href='#'>order status</a>
+                </li>
+                <li>
+                  <a href='#'>payment options</a>
+                </li>
+              </ul>
+            </div>
+            <div class='footer-col'>
+              <h4>online shop</h4>
+              <ul>
+                <li>
+                  <a href='#'>watch</a>
+                </li>
+                <li>
+                  <a href='#'>bag</a>
+                </li>
+                <li>
+                  <a href='#'>shoes</a>
+                </li>
+                <li>
+                  <a href='#'>dress</a>
+                </li>
+              </ul>
+            </div>
+            <div class='footer-col'>
+              <h4>follow us</h4>
+              <div class='social-links'>
+                <a href='#'>
+                  <i class='fab fa-facebook-f'></i>
+                </a>
+                <a href='#'>
+                  <i class='fab fa-twitter'></i>
+                </a>
+                <a href='#'>
+                  <i class='fab fa-instagram'></i>
+                </a>
+                <a href='#'>
+                  <i class='fab fa-linkedin-in'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div className='text-center bg-[#24262b] '>
+        <p>Copyright © 2023 - All right reserved </p>
+      </div>
+    </>
+  );
 };
 
 export default Footer;

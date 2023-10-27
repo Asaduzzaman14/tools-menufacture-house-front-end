@@ -142,7 +142,7 @@ const Login = () => {
 
                         {signInError}
                         <input type="submit" value={'LOGIN'} className='btn w-full btn-secondary text-white' />
-                        <Link to='/signup'><small>New To Friends Factory ? <span className='text-primary font-mono hover:underline'>Create an account</span></small></Link>
+                        <Link to='/signup'><small>New To Tools Factory ? <span className='text-primary font-mono hover:underline'>Create an account</span></small></Link>
                         <br />
 
 
